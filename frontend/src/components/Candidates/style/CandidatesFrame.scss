@@ -1,11 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700&display=swap');
 
 .candidates-frame {
-  font-family: 'Heebo', sans-serif;
-  direction: rtl;
-  background: #f5f6fa; // רקע כללי אפור בהיר
   padding: 2rem;
   min-height: 100vh;
+  max-width: 1200px;   // או כל רוחב שאת רוצה כמרכז התוכן
+  margin: 0 auto;      // מרכז את הקונטיינר אוטומטית
+  padding: 2rem;
 
   &__search-container {
     background: white;
