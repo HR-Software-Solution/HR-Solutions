@@ -1,7 +1,9 @@
+import './style/CandidatesButtons.scss';
+
 const CandidatesButtons = ({ onAdd, onExport }) => {
 
     return (
-        <div>
+        <div className='candidates-buttons'>
             <button type="button" onClick={onAdd}>
                 + הוסף מועמד
             </button>
