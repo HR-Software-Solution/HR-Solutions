@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700&display=swap');
+
+.candidates-frame {
+  font-family: 'Heebo', sans-serif;
+  direction: rtl;
+  background: #f5f6fa; // רקע כללי אפור בהיר
+  padding: 2rem;
+  min-height: 100vh;
+
+  &__search-container {
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px -5px rgba(0,0,0,0.05),
+                0 8px 10px -6px rgba(0,0,0,0.01);
+    padding: 2rem;
+    margin-top: 1.5rem;
+  }
+
+  &__title {
+    font-size: 1.8rem;       // כמו בקוד המקור
+    font-weight: 700;        
+    margin-bottom: 1rem;     // רווח מתחת לכותרת
+    color: #4a4a4a;          // אפור כהה כמו בקוד המקור
+    position: relative;
+    padding-bottom: 0.8rem;
+
+    &:after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      width: 50px;
+      height: 4px;
+      background: linear-gradient(90deg, #6154f0, #cb52f0);
+      border-radius: 2px;
+    }
+  }
+
+}
