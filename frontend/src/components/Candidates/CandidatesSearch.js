@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import AISearch from './AISearch';
 import FilterSearch from './FilterSearch';
+import './style/CandidatesSearch.scss';
 
 const CandidatesSearch = () => {
 
@@ -26,6 +27,8 @@ const CandidatesSearch = () => {
                 ))}
             </div>
 
+            <div className="search-divider" /> {/* קו הפרדה */}
+            
             {/* תיבת חיפוש חכמה */}
             {searchType === 'ai' && (
                 <AISearch />

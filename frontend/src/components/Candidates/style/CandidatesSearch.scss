@@ -1,0 +1,30 @@
+.candidates-search {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem; // ריווח בין סוגי החיפוש
+  font-family: 'Heebo', sans-serif;
+
+  .search-types {
+    display: flex;
+    gap: 2rem;
+
+    label {
+      font-weight: 500;
+      cursor: pointer;
+
+      input {
+        margin-left: 0.5rem; // למרחק בין הרדיו לטקסט
+        cursor: pointer;
+      }
+    }
+  }
+
+    // הפרדה ויזואלית בין הרדיו לחיפוש
+  .search-divider {
+    margin-top: 0.75rem;
+    margin-bottom: 0.75rem;
+    border-top: 1px solid #dcdcdc; // קו דק אפור
+    width: 100%;
+  }
+
+}
