@@ -26,16 +26,5 @@
       background-color: #e5e5e5;
       box-shadow: 0 2px 6px rgba(0,0,0,0.05);
     }
-
-    // אפשר להוסיף class נוסף אם נרצה כפתור ראשי שיבלוט
-    &.primary {
-      background-color: #6154f0; 
-      color: white;
-      border: none;
-
-      &:hover {
-        background-color: #5041d1;
-      }
-    }
   }
 }
