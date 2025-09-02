@@ -1,3 +1,5 @@
+import './style/AISearch.scss';
+
 const AISearch = () => {
   return (
     <div className="ai-search">
