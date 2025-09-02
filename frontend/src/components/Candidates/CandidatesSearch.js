@@ -21,7 +21,7 @@ const CandidatesSearch = () => {
                             checked={searchType === type}
                             onChange={() => handleSearchTypeChange(type)}   
                         />
-                        {type === 'filter' ? 'תיבת חיפוש חכמה' : 'פילטרים מתקדמים'}
+                        {type === 'filter' ? 'פילטרים מתקדמים' : 'תיבת חיפוש חכמה'}
                     </label>
                 ))}
             </div>
