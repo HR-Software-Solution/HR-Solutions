@@ -1,5 +1,6 @@
 import express from 'express';
 import cors from 'cors';
+import canstsdidateRoutes from './routes/candidates.js';
 
 const app = express();
 
@@ -7,13 +8,8 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-//test route
-app.get('/candidates', (req, res) =>{
-    res.status(200).json({
-        message: 'List of candidates',
-        status: 'success'
-    })
-})
+//API routes
+app.use('/api/candidates', canstsdidateRoutes);
 
 
 export default app;
