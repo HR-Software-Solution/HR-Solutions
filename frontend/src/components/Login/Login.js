@@ -6,13 +6,31 @@ export default function Login() {
     <div className="login-container">
       <h1>ניהול השמה וגיוס</h1>
       <div className="login-box">
-        <input type="text" placeholder="Email" />
-        <input type="text" placeholder="Password" />
-        <button>הכנס</button>
-      <div className="links">
-        <a href="#">שכחת סיסמה?</a>
-        <a href="#">הרשמה</a>
-      </div>
+        <input
+          type="email"
+          placeholder="Email"
+          pattern="^[\w\.-]+@[\w\.-]+\.\w{2,}$"
+          required
+        />
+        <input
+          type="password"
+          inputMode="numeric"
+          pattern="\d*"
+          placeholder="Password"
+          required
+        />
+        <button className="login-box-button">הכנס</button>
+        <button className="google-signup">
+          <img
+            src={`${process.env.PUBLIC_URL}/logo_google_icon.png`}
+            alt="Google"
+          />
+          <span>Google</span>
+        </button>
+        <div className="links">
+          <a href="#">שכחת סיסמה?</a>
+          <a href="#">הרשמה</a>
+        </div>
       </div>
     </div>
   );

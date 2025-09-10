@@ -40,7 +40,7 @@ body {
   gap: 15px;
 }
 
-.login-box button{
+.login-box-button{
   padding: 0.7rem 1.5rem;
   font-weight: 600;
   color: white;
@@ -86,3 +86,34 @@ body {
 .login-box .links a:hover {
   text-decoration: underline;
 }
+
+.google-signup {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  background: #f5f5f9; // צבע הרקע של דף APP
+  color: #000;
+  border: 2px solid;
+  border-image: linear-gradient(90deg, #6154f0, #cb52f0) 1;
+  border-radius: 24px; // קצוות רכים יותר
+  padding: 0.7rem 1.5rem;
+  font-weight: 700;
+  font-size: 3rem; // מגדיל את המילה "Google"
+  cursor: pointer;
+  margin-top: 10px;
+  transition: box-shadow 0.2s;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+  min-width: 100%; // גודל כמו הכפתור הכנס
+    padding: 0.7rem 1.5rem;
+  font-weight: 600;
+  color: rgb(85, 81, 81);
+
+
+  img {
+    width: 40px; // מגדיל את הלוגו
+    margin-right: 16px;
+  }
+
+}
+
